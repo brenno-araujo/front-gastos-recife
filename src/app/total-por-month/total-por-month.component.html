@@ -1,0 +1,23 @@
+<h2>Análise por mês</h2>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Número do mês</th>
+      <th>Quantidade de despesas</th>
+      <th>Mês</th>
+      <th>Valor Empenhado</th>
+      <th>Valor Liquidado</th>
+      <th>Valor Pago</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data">
+      <td>{{ item.codigo }}</td>
+      <td>{{ item.count }}</td>
+      <td>{{ item.mes }}</td>
+      <td>{{ item.valor_empenhado }}</td>
+      <td>{{ item.valor_liquidado }}</td>
+      <td>{{ item.valor_pago }}</td>
+    </tr>
+  </tbody>
+</table>

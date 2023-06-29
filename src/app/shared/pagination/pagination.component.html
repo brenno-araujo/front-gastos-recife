@@ -1,0 +1,5 @@
+<div class="pagination">
+  <button class="page-link" *ngFor="let pageNumber of pages"
+          [class.active]="pageNumber === currentPage"
+          (click)="goToPage(pageNumber)">{{pageNumber}}</button>
+</div>

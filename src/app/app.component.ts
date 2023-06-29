@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'front-gastos-recife';
+  showTotalPerMonth = true;
+  showTotalPerCategory = false;
+  showInfoSorce = false;
+
+  showTotalPerMonthComponent() {
+    this.showTotalPerMonth = true;
+    this.showTotalPerCategory = false;
+    this.showInfoSorce = false;
+  }
+
+  showTotalPerCategoryComponent() {
+    this.showTotalPerMonth = false;
+    this.showTotalPerCategory = true;
+    this.showInfoSorce = false;
+  }
+
+  showInfoSorceComponent() {
+    this.showTotalPerMonth = false;
+    this.showTotalPerCategory = false;
+    this.showInfoSorce = true;
+  }
 }

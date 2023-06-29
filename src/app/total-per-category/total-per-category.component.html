@@ -1,0 +1,23 @@
+<h2>Análise por categoria</h2>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Quantidade de despesas</th>
+      <th>Nome da despesa</th>
+      <th>Valor Empenhado</th>
+      <th>Valor Liquidado</th>
+      <th>Valor Pago</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data">
+      <td>{{ item.codigo }}</td>
+      <td>{{ item.count }}</td>
+      <td>{{ item.nome }}</td>
+      <td>{{ item.valor_empenhado }}</td>
+      <td>{{ item.valor_liquidado }}</td>
+      <td>{{ item.valor_pago }}</td>
+    </tr>
+  </tbody>
+</table>

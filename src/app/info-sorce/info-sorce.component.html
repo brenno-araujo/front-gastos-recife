@@ -1,0 +1,25 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Quantidade de despesas</th>
+      <th>Fonte recurso</th>
+      <th>Valor Empenhado</th>
+      <th>Valor Liquidado</th>
+      <th>Valor Pago</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of getDisplayedData()">
+      <td>{{ item.fonteRecursoCodigo }}</td>
+      <td>{{ item.count }}</td>
+      <td>{{ item.fonteRecursoNome }}</td>
+      <td>{{ item.valorEmpenhado }}</td>
+      <td>{{ item.valorLiquidado }}</td>
+      <td>{{ item.valorPago }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<app-pagination [currentPage]="currentPage" [totalPages]="totalPages" (pageChange)="changePage($event)"></app-pagination>
+
