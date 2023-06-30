@@ -27,4 +27,5 @@ export class AppComponent {
     this.showTotalPerCategory = false;
     this.showInfoSorce = true;
   }
+
 }

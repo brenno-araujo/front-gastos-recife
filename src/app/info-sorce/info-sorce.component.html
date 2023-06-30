@@ -1,5 +1,11 @@
-<table class="table table-bordered">
-  <thead>
+
+<div *ngIf="error">
+  <app-error-message [message]="error"></app-error-message>
+</div>
+
+<h2 class="text-center" [ngClass]="{'hide-header': error}"> Análise por fonte de recurso</h2>
+<app-table>
+  <thead [ngClass]="{'hide-header': error}">
     <tr>
       <th>Código</th>
       <th>Quantidade de despesas</th>
@@ -19,7 +25,7 @@
       <td>{{ item.valorPago }}</td>
     </tr>
   </tbody>
-</table>
+</app-table>
 
 <app-pagination [currentPage]="currentPage" [totalPages]="totalPages" (pageChange)="changePage($event)"></app-pagination>
 

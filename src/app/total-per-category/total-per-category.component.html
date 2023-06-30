@@ -1,6 +1,10 @@
-<h2>Análise por categoria</h2>
-<table class="table table-bordered">
-  <thead>
+<div *ngIf="error">
+  <app-error-message [message]="error"></app-error-message>
+</div>
+
+<h2 [ngClass]="{'hide-header': error}">Análise por categoria</h2>
+<app-table>
+  <thead [ngClass]="{'hide-header': error}">
     <tr>
       <th>Código</th>
       <th>Quantidade de despesas</th>
@@ -20,4 +24,4 @@
       <td>{{ item.valor_pago }}</td>
     </tr>
   </tbody>
-</table>
+</app-table>

@@ -24,6 +24,11 @@ p {
   flex: 1;
 }
 
+img {
+  max-width: 50px;
+  background-color: blue;
+}
+
 .toolbar {
   position: absolute;
   top: 0;
@@ -60,7 +65,7 @@ p {
   display: flex;
   margin: 82px auto 32px;
   padding: 0 16px;
-  max-width: 960px;
+  max-width: 1100px;
   flex-direction: column;
   align-items: center;
 }
@@ -168,27 +173,5 @@ svg.material-icons:not(:last-child) {
   margin-right: 8px;
 }
 
-.fab {
-  position: fixed;
-  bottom: 32px;
-  right: 32px;
-  background-color: #1976d2;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-}
 
-.fab:hover {
-  background-color: #1565c0;
-}
 
-.fab .material-icons {
-  color: white;
-  font-size: 24px;
-}

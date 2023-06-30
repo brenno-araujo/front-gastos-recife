@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { TotalPorMonthComponent } from './total-por-month/total-por-month.component';
 import { InfoSorceComponent } from './info-sorce/info-sorce.component';
 import { PaginationComponent } from './shared/pagination/pagination.component';
+import { TableComponent } from './shared/table/table.component';
+import { ErrorMessageComponent } from './shared/error-message/error-message.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { PaginationComponent } from './shared/pagination/pagination.component';
     TotalPorMonthComponent,
     InfoSorceComponent,
     PaginationComponent,
+    TableComponent,
+    ErrorMessageComponent,
   ],
   imports: [
     BrowserModule,
