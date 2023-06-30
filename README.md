@@ -1,27 +1,20 @@
-# FrontGastosRecife
+# Frontend que integrará apis do api-gastos-recife 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.12.
+## Visão Geral
 
-## Development server
+Este projeto foi feito em angular 14.2.12, com o objetivo de consumir as apis do api-gastos-recife, que é um projeto que visa disponibilizar dados sobre os gastos da prefeitura do recife, para que a população possa ter acesso a esses dados de forma mais simples e intuitiva.
+
+## Tecnologias utilizadas
+
+- Angular 14.2.12
+- Typescript 4.7.2
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Como executar o frontend
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para executar o frontend, é necessário ter o node instalado na máquina, e o angular cli, que pode ser instalado com o comando `npm install -g @angular/cli`. Após isso, basta executar o comando `npm install` para instalar as dependências do projeto, e em seguida, executar o comando `ng serve` para executar o projeto. O projeto estará disponível em `http://localhost:4200/`.
 
-## Build
+## Autor 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Brenno Araújo](https://br.linkedin.com/in/brennoaraujo).
