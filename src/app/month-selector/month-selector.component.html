@@ -1,0 +1,16 @@
+
+<div class="container-month-selector">
+  <select class="custom-select" [(ngModel)]="selectedMonth">
+    <option *ngFor="let month of months" [value]="month.number">{{ month.name }}</option>
+  </select>
+  <button class="custom-button" (click)="getTotalExpensesByMonth(selectedMonth)">Obter Despesas</button>
+
+  <div *ngIf="expenses" class="expenses-container">
+    <div class="expense-item">Total: {{ expenses.count }}</div>
+    <div class="expense-item">Código: {{ expenses.codigo }}</div>
+    <div class="expense-item">Mês: {{ expenses.mes }}</div>
+    <div class="expense-item">Valor Empenhado: {{ expenses.valor_empenhado }}</div>
+    <div class="expense-item">Valor Liquidado: {{ expenses.valor_liquidado }}</div>
+    <div class="expense-item">Valor Pago: {{ expenses.valor_pago }}</div>
+  </div>
+</div>

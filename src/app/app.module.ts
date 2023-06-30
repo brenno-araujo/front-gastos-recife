@@ -9,6 +9,8 @@ import { InfoSorceComponent } from './info-sorce/info-sorce.component';
 import { PaginationComponent } from './shared/pagination/pagination.component';
 import { TableComponent } from './shared/table/table.component';
 import { ErrorMessageComponent } from './shared/error-message/error-message.component';
+import { MonthSelectorComponent } from './month-selector/month-selector.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { ErrorMessageComponent } from './shared/error-message/error-message.comp
     PaginationComponent,
     TableComponent,
     ErrorMessageComponent,
+    MonthSelectorComponent,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
